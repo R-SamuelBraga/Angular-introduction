@@ -1,0 +1,21 @@
+<app-top-bar></app-top-bar>
+
+<div class="container">
+  <menu-component></menu-component>
+  <router-outlet></router-outlet>
+  <!--property binding-->
+  <my-button [label]="buttonLabel"></my-button>
+  <my-button [label]="'noticia'"></my-button>
+  <!--interpolacao-->
+  <my-button label="{{ buttonSecond }}"></my-button>
+  <my-button label="carrinho"></my-button>
+
+  <!--two data binding-->
+  <app-entry-data></app-entry-data>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
